@@ -1,0 +1,39 @@
+from PIL import Image, ImageDraw, ImageFont
+
+# Banner dimensions
+width, height = 1200, 300
+background_color = (245, 222, 179)  # light beige
+
+# Create image
+banner = Image.new('RGB', (width, height), background_color)
+draw = ImageDraw.Draw(banner)
+
+# Banner text
+text = "Premium Raw Gelatin"
+subtext = "Pure, Natural, and Versatile"
+
+# Load fonts (use default if custom not available)
+try:
+    font = ImageFont.truetype("arial.ttf", 80)
+    subfont = ImageFont.truetype("arial.ttf", 40)
+except:
+    font = ImageFont.load_default()
+    subfont = ImageFont.load_default()
+
+# Calculate text positions
+text_width, text_height = draw.textsize(text, font=font)
+subtext_width, subtext_height = draw.textsize(subtext, font=subfont)
+text_x = (width - text_width) // 2
+text_y = 60
+subtext_x = (width - subtext_width) // 2
+subtext_y = text_y + text_height + 20
+
+# Draw text
+draw.text((text_x, text_y), text, fill=(102, 51, 0), font=font)
+draw.text((subtext_x, subtext_y), subtext, fill=(102, 51, 0), font=subfont)
+
+# Optionally, draw a simple gelatin illustration (circle)
+draw.ellipse([(width-180, height-180), (width-60, height-60)], fill=(255, 255, 224), outline=(210, 180, 140), width=6)
+
+# Save banner
+banner.save("static/gelatin_banner.jpg")
