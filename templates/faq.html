@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        /* FAQ-specific small overrides */
+        .faq-controls { display:flex; gap:0.6rem; justify-content:flex-end; margin-bottom:1rem; }
+        .faq-search { padding:0.6rem 0.8rem; border-radius:8px; border:1px solid #e0e0e0; width:320px; }
+        .faq-accordion { max-width:1000px; margin:1rem auto; }
+        .faq-item { background:#fff; border:1px solid #e8e8e8; border-radius:8px; margin-bottom:0.8rem; overflow:hidden; }
+        .faq-question { padding:1rem 1.2rem; cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
+        .faq-question h3 { margin:0; font-size:1rem; font-weight:700; }
+        .faq-answer { padding:0 1.2rem 1rem 1.2rem; display:none; color:#333; }
+        .faq-item.open .faq-answer { display:block; }
+        .faq-item.open .faq-question { background:#f6f9ff; }
+        .faq-meta { font-size:0.85rem; color:#777; }
+        .faq-actions { display:flex; gap:0.5rem; align-items:center; }
+        .small-btn { padding:0.45rem 0.7rem; border-radius:6px; border:1px solid #ddd; background:#fff; cursor:pointer; font-size:0.9rem; }
+        .small-btn.primary { background:#1a237e; color:#fff; border-color:#1a237e; }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="content faq-accordion">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem;">
+            <h1 style="margin:0;">Frequently Asked Questions</h1>
+            <div class="faq-controls">
+                <input id="faqSearch" class="faq-search" placeholder="Search FAQs (keyword, e.g. MOQ, sample, delivery)..." />
+                <button class="small-btn" id="collapseAll">Collapse All</button>
+                <button class="small-btn primary" id="expandAll">Expand All</button>
+            </div>
+        </div>
+
+        <div id="faqLoading" style="text-align:center; padding:1.6rem; color:#666;">Loading FAQs…</div>
+        <div id="faqList" aria-live="polite"></div>
+
+    </div>
+
+    <script src="/static/faq.js"></script>
+</body>
+</html>

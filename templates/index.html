@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; }
+        .header { background: #fff; padding: 2rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .main-image { width: 200px; margin: 2rem auto; display: block; }
+        .cta-btn { background: #007bff; color: #fff; border: none; padding: 1rem 2rem; border-radius: 5px; cursor: pointer; font-size: 1rem; margin-top: 2rem; }
+        .footer { text-align: center; padding: 1rem; background: #eee; position: fixed; width: 100%; bottom: 0; }
+    </style>
+</head>
+<body>
+    <!-- ...existing code... -->
+    <!-- ...existing code... -->
+    {% include 'navbar.html' %}
+    <!-- Unique Animated Hero Banner -->
+    <header class="hero-unique" role="banner">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Premium Gelatin Solutions for Global Industries</h1>
+                <p>Trusted quality, tailored grades, and global delivery — 20+ years of expertise.</p>
+                <div style="margin-top:1rem; display:flex; gap:0.6rem; justify-content:center;">
+                    <a href="/product" class="cta-btn">View Products</a>
+                    <a href="/contact" class="cta-btn" style="background:#28a745;">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Optional fallback banner image (place a file at /static/images/banner_unique.jpg to use a photo instead) -->
+        <img src="/static/images/banner_unique.jpg" alt="" class="hero-fallback" aria-hidden="true">
+    </header>
+    <div class="content">
+        <section style="margin-bottom:2.5rem;">
+            <h2 style="color:#fbc02d; font-size:2rem; margin-bottom:1.2rem;">Welcome to Shanghai Apex Biotechnology Co. Ltd.</h2>
+            <p style="font-size:1.15rem; margin-bottom:1.5rem;">We specialize in high-quality gelatin and collagen products, serving food, pharmaceutical, nutraceutical, and industrial sectors worldwide. With advanced manufacturing in Shanghai and a global sales office in Dubai, we deliver safe, stable, and certified gelatin solutions.</p>
+            <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-bottom:2rem;">
+                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px;">
+                    <strong>Founded:</strong> 2001<br>
+                    <strong>Products:</strong> Edible, Pharmaceutical, Hydrolyzed Collagen, Specialty Gelatin
+                </div>
+                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px;">
+                    <strong>Certifications:</strong> ISO 9001, ISO 22000, GMP, HACCP, Halal, Kosher, FDA registered
+                </div>
+            </div>
+            <div style="display:flex; gap:2rem; flex-wrap:wrap; justify-content:center; margin-bottom:2.5rem;">
+                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px; text-align:center;">
+                    <h3 style="color:#1a237e; font-size:1.1rem; margin-bottom:0.5rem;">Annual Capacity</h3>
+                    <div style="font-size:1.3rem; font-weight:600; color:#fbc02d;">15,000+ tons</div>
+                </div>
+                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px; text-align:center;">
+                    <h3 style="color:#1a237e; font-size:1.1rem; margin-bottom:0.5rem;">Global Reach</h3>
+                    <div style="font-size:1.3rem; font-weight:600; color:#fbc02d;">50+ countries</div>
+                </div>
+                <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                    <a href="/product" class="cta-btn" style="margin-bottom:0.7rem;">View Products</a>
+                    <a href="mailto:info@shanghaiapexgelatin.com" class="cta-btn" style="background:#28a745;">Contact Us</a>
+                </div>
+            </div>
+        </section>
+        <section style="margin-bottom:2.5rem;">
+            <h2 style="color:#fbc02d; font-size:1.5rem; margin-bottom:1.2rem;">Contact Information</h2>
+            <div style="display:flex; gap:2rem; flex-wrap:wrap;">
+                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px;">
+                    <strong>China Head Office:</strong><br>
+                    Shanghai Apex Biotechnology Co. Ltd., Industrial Zone, Shanghai, China<br>
+                    Phone: +86-21-XXXXXXXX<br>
+                    Email: <a href="mailto:info@shanghaiapexgelatin.com">info@shanghaiapexgelatin.com</a>
+                </div>
+                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px;">
+                    <strong>UAE Sales Office:</strong><br>
+                    ABCL General Trading FZCO, Business Center, Dubai, UAE<br>
+                    Phone: +971-4-XXXXXXXX<br>
+                    Email: <a href="mailto:dubai@shanghaiapexgelatin.com">dubai@shanghaiapexgelatin.com</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div style="text-align:center;">
+        <button class="cta-btn" onclick="navigator.clipboard.writeText(window.location.href)">Copy Link</button>
+    </div>
+    <!-- Product Cards Section (now at bottom) -->
+    <!-- Major Products Section -->
+    <section class="major-products" style="max-width:1200px; margin:2.5rem auto 1rem auto;">
+        <h2 style="text-align:center; color:#1a237e;">Major Products</h2>
+        <div class="product-grid" style="margin-top:1rem;">
+            <a class="product-card" href="/product/edible">
+                <img src="/static/images/product_powder.png" alt="Edible Gelatin">
+                <h3>Edible Gelatin</h3>
+                <p>For confectionery, dairy and desserts.</p>
+            </a>
+            <a class="product-card" href="/product/pharmaceutical">
+                <img src="/static/images/product_capsules.png" alt="Pharmaceutical Gelatin">
+                <h3>Pharmaceutical Gelatin</h3>
+                <p>High-purity gelatin for capsules and medical use.</p>
+            </a>
+            <a class="product-card" href="/product/collagen">
+                <img src="/static/images/product_powder.png" alt="Hydrolyzed Collagen">
+                <h3>Hydrolyzed Collagen</h3>
+                <p>Collagen peptides for supplements and cosmetics.</p>
+            </a>
+            <a class="product-card" href="/product/fish">
+                <img src="/static/images/product_powder.png" alt="Fish Gelatin">
+                <h3>Fish Gelatin</h3>
+                <p>Allergen-friendly marine gelatin.</p>
+            </a>
+            <a class="product-card" href="/product/sheet">
+                <img src="/static/images/product_powder.png" alt="Gelatin Sheet">
+                <h3>Gelatin Sheet</h3>
+                <p>Industrial and culinary sheets.</p>
+            </a>
+            <a class="product-card" href="/product/others">
+                <img src="/static/images/product_powder.png" alt="Other Products">
+                <h3>Other Specialties</h3>
+                <p>Tailored grades and formulations.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications" style="max-width:1200px; margin:2rem auto 2rem auto;">
+        <h2 style="text-align:center; color:#1a237e;">Applications</h2>
+        <div class="app-grid" style="margin-top:1rem;">
+            <a class="app-card" href="/application/food">
+                <img src="/static/images/product_powder.png" alt="Food Applications">
+                <h3>Food & Beverage</h3>
+                <p>Confectionery, dairy, bakery and more.</p>
+            </a>
+            <a class="app-card" href="/application/pharmaceutical">
+                <img src="/static/images/product_capsules.png" alt="Pharmaceutical Applications">
+                <h3>Pharmaceutical</h3>
+                <p>Capsules, coatings, drug delivery.</p>
+            </a>
+            <a class="app-card" href="/application/health">
+                <img src="/static/images/product_powder.png" alt="Health & Nutrition">
+                <h3>Health & Nutrition</h3>
+                <p>Collagen supplements and nutraceuticals.</p>
+            </a>
+        </div>
+    </section>
+    <!-- Featured Carousel -->
+    <section style="max-width:1200px; margin:2rem auto;">
+        <h2 style="text-align:center; color:#1a237e;">Featured Products</h2>
+        <div class="carousel" id="featuredCarousel">
+            <button class="carousel-btn prev" aria-label="Previous">‹</button>
+            <div class="carousel-track">
+                <div class="carousel-item"><img data-src="/static/images/product_capsules.png" alt="Featured 1" class="lazy lightbox-img"><div class="carousel-caption">Pharmaceutical Gelatin</div></div>
+                <div class="carousel-item"><img data-src="/static/images/product_powder.png" alt="Featured 2" class="lazy lightbox-img"><div class="carousel-caption">Edible Gelatin</div></div>
+                <div class="carousel-item"><img data-src="/static/images/product_capsules.png" alt="Featured 3" class="lazy lightbox-img"><div class="carousel-caption">Hydrolyzed Collagen</div></div>
+            </div>
+            <button class="carousel-btn next" aria-label="Next">›</button>
+        </div>
+    </section>
+
+    <!-- Animated Stats -->
+    <section style="max-width:1200px; margin:1rem auto 2rem auto; text-align:center;">
+        <div class="stats-grid">
+            <div class="stat"><div class="stat-number" data-target="15000">0</div><div class="stat-label">Annual Capacity (tons)</div></div>
+            <div class="stat"><div class="stat-number" data-target="50">0</div><div class="stat-label">Countries Served</div></div>
+            <div class="stat"><div class="stat-number" data-target="20">0</div><div class="stat-label">Years Experience</div></div>
+            <div class="stat"><div class="stat-number" data-target="8">0</div><div class="stat-label">Certifications</div></div>
+        </div>
+    </section>
+
+    <!-- Quick Inquiry Modal -->
+    <div id="inquiryModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">×</button>
+            <h2>Quick Inquiry</h2>
+            <p>Send us a short inquiry — we'll get back quickly.</p>
+            <form id="inquiryForm">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Short message (product, qty, request)" rows="4" required></textarea>
+                <div style="display:flex; gap:0.6rem; justify-content:flex-end; margin-top:0.6rem;">
+                    <button type="button" class="small-btn" id="inquiryCancel">Cancel</button>
+                    <button type="submit" class="small-btn primary">Send via Email</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Why Choose Section at Bottom -->
+    <section style="max-width:900px; margin:2rem auto; background:#fff; border-radius:18px; box-shadow:0 2px 16px rgba(26,35,126,0.07); padding:2rem 2rem;">
+        <h2 style="color:#fbc02d; font-size:1.5rem; margin-bottom:1.2rem; text-align:center;">Why Choose Shanghai Apex Biotechnology?</h2>
+        <ul style="font-size:1.08rem; line-height:2;">
+            <li>20+ years of experience in gelatin and collagen production</li>
+            <li>Advanced manufacturing in Shanghai, global sales office in Dubai</li>
+            <li>ISO 9001, ISO 22000, GMP, HACCP, Halal, Kosher, FDA registered</li>
+            <li>Annual capacity: 15,000+ tons, serving 50+ countries</li>
+            <li>Safe, stable, and certified products for food, pharma, and nutraceuticals</li>
+        </ul>
+    </section>
+    <!-- Certification Logos Section -->
+    <section style="max-width:900px; margin:2rem auto 3rem auto; text-align:center;">
+        <img src="https://www.jdgelatin.com/uploads/20220311/iso9001.png" alt="ISO 9001" style="height:48px; margin:0 1rem;">
+        <img src="https://www.jdgelatin.com/uploads/20220311/iso22000.png" alt="ISO 22000" style="height:48px; margin:0 1rem;">
+        <img src="https://www.jdgelatin.com/uploads/20220311/gmp.png" alt="GMP" style="height:48px; margin:0 1rem;">
+        <img src="https://www.jdgelatin.com/uploads/20220311/haccp.png" alt="HACCP" style="height:48px; margin:0 1rem;">
+        <img src="https://www.jdgelatin.com/uploads/20220311/halal.png" alt="Halal" style="height:48px; margin:0 1rem;">
+        <img src="https://www.jdgelatin.com/uploads/20220311/kosher.png" alt="Kosher" style="height:48px; margin:0 1rem;">
+        <img src="https://www.jdgelatin.com/uploads/20220311/fda.png" alt="FDA" style="height:48px; margin:0 1rem;">
+    </section>
+    <div class="footer">
+        Made with Flask | <a href="#">Company Info</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <!-- Hero Banner -->
+    <div style="width:100%; height:320px; margin-bottom:2rem; border-bottom:6px solid #232b6d;">
+        <img src="/static/images/banner_placeholder.svg" alt="Products banner" style="width:100%; height:320px; object-fit:cover; display:block;">
+    </div>
+    <div class="content">
+        <h1 style="text-align:center; color:#1a237e;">Product Catalogue</h1>
+        <p style="text-align:center; max-width:900px; margin:0.5rem auto 2rem auto;">Below is an overview of our main product categories. Click any item to open the detailed catalogue for that category.</p>
+
+        <div style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.5rem;">
+            <!-- Pharmaceutical -->
+            <div style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(26,35,126,0.06);">
+                <h3 style="color:#1a237e; margin-bottom:0.6rem;">Pharmaceutical Gelatin</h3>
+                <p style="margin-bottom:0.8rem;">Products for capsules, tablets, micro-encapsulation and medical use.</p>
+                <ul style="margin-bottom:0.8rem;">
+                    <li><a href="/product/pharmaceutical" style="color:#232b6d; font-weight:600;">Softgel Capsules</a></li>
+                    <li><a href="/product/pharmaceutical" style="color:#232b6d; font-weight:600;">Hard Capsules</a></li>
+                    <li><a href="/product/pharmaceutical" style="color:#232b6d; font-weight:600;">Micro-Encapsulations</a></li>
+                    <li><a href="/product/pharmaceutical" style="color:#232b6d; font-weight:600;">Tablets & Coatings</a></li>
+                </ul>
+                <a href="/product/pharmaceutical" class="cta-btn">View Catalogue</a>
+            </div>
+
+            <!-- Edible -->
+            <div style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(26,35,126,0.06);">
+                <h3 style="color:#1a237e; margin-bottom:0.6rem;">Edible Gelatin</h3>
+                <p style="margin-bottom:0.8rem;">Bovine, porcine and specialty edible gelatins for food, confectionery and bakery.</p>
+                <ul style="margin-bottom:0.8rem;">
+                    <li><a href="/product/edible" style="color:#232b6d; font-weight:600;">Bovine Gelatin</a></li>
+                    <li><a href="/product/edible" style="color:#232b6d; font-weight:600;">Halal / Kosher Options</a></li>
+                    <li><a href="/product/edible" style="color:#232b6d; font-weight:600;">Pork Gelatin</a></li>
+                </ul>
+                <a href="/product/edible" class="cta-btn">View Catalogue</a>
+            </div>
+
+            <!-- Fish -->
+            <div style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(26,35,126,0.06);">
+                <h3 style="color:#1a237e; margin-bottom:0.6rem;">Fish Gelatin</h3>
+                <p style="margin-bottom:0.8rem;">Marine-sourced gelatin for food, supplements and specialty pharma uses.</p>
+                <ul style="margin-bottom:0.8rem;">
+                    <li><a href="/product/fish" style="color:#232b6d; font-weight:600;">Fish Gelatin for Softgels</a></li>
+                    <li><a href="/product/fish" style="color:#232b6d; font-weight:600;">Fish Gelatin for Food</a></li>
+                </ul>
+                <a href="/product/fish" class="cta-btn">View Catalogue</a>
+            </div>
+
+            <!-- Gelatin Sheet -->
+            <div style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(26,35,126,0.06);">
+                <h3 style="color:#1a237e; margin-bottom:0.6rem;">Gelatin Sheet</h3>
+                <p style="margin-bottom:0.8rem;">Leaf / sheet gelatin in various weights for culinary and industrial use.</p>
+                <ul style="margin-bottom:0.8rem;">
+                    <li><a href="/product/sheet" style="color:#232b6d; font-weight:600;">2g / 2.5g / 3.3g / 5g Leaf Gelatin</a></li>
+                </ul>
+                <a href="/product/sheet" class="cta-btn">View Catalogue</a>
+            </div>
+
+            <!-- Collagen -->
+            <div style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(26,35,126,0.06);">
+                <h3 style="color:#1a237e; margin-bottom:0.6rem;">Collagen</h3>
+                <p style="margin-bottom:0.8rem;">Powders and peptides for nutraceuticals, cosmetics and food applications.</p>
+                <ul style="margin-bottom:0.8rem;">
+                    <li><a href="/product/collagen" style="color:#232b6d; font-weight:600;">Bovine Collagen</a></li>
+                    <li><a href="/product/collagen" style="color:#232b6d; font-weight:600;">Collagen Peptides</a></li>
+                    <li><a href="/product/collagen" style="color:#232b6d; font-weight:600;">Fish / Chicken Collagen</a></li>
+                </ul>
+                <a href="/product/collagen" class="cta-btn">View Catalogue</a>
+            </div>
+
+            <!-- Others -->
+            <div style="background:#fff; padding:1.2rem; border-radius:12px; box-shadow:0 2px 12px rgba(26,35,126,0.06);">
+                <h3 style="color:#1a237e; margin-bottom:0.6rem;">Others</h3>
+                <p style="margin-bottom:0.8rem;">HPMC, industrial gelatin, paintball, construction HPMC and specialty items.</p>
+                <ul style="margin-bottom:0.8rem;">
+                    <li><a href="/product/others" style="color:#232b6d; font-weight:600;">HPMC & Capsules</a></li>
+                    <li><a href="/product/others" style="color:#232b6d; font-weight:600;">Industrial Gelatin/Collagen</a></li>
+                    <li><a href="/product/others" style="color:#232b6d; font-weight:600;">Paintball & Construction HPMC</a></li>
+                </ul>
+                <a href="/product/others" class="cta-btn">View Catalogue</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Made with Flask | <a href="/">Home</a>
+    </div>
+</body>
+</html>

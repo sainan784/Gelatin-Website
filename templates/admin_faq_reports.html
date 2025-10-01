@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FAQ Reports - Admin</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .report-table { width:100%; border-collapse:collapse; }
+        .report-table th, .report-table td { border:1px solid #ddd; padding:8px; }
+        .report-table th { background:#f4f4f8; text-align:left; }
+        .download { margin:1rem 0; }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="content" style="max-width:1100px; margin:2rem auto;">
+        <h1>FAQ Reports</h1>
+        {% if admin_token %}
+            <p style="color:#666;">Admin token protection is enabled for this endpoint.</p>
+        {% endif %}
+
+        {% if csv_exists %}
+            <div class="download"><a class="cta-btn" href="{{ download_url }}">Download CSV</a></div>
+            <table class="report-table">
+                <thead>
+                    <tr><th>Timestamp (UTC)</th><th>Question</th><th>Page</th><th>User-Agent</th></tr>
+                </thead>
+                <tbody>
+                {% for r in rows %}
+                    <tr>
+                        <td>{{ r.timestamp }}</td>
+                        <td style="max-width:420px; white-space:pre-wrap;">{{ r.question }}</td>
+                        <td>{{ r.page }}</td>
+                        <td style="max-width:420px; white-space:pre-wrap;">{{ r.user_agent }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No reports have been submitted yet.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

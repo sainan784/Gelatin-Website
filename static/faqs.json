@@ -1,0 +1,37 @@
+[
+  {
+    "q": "What is your MOQ?",
+    "a": "Our standard MOQ is 1 metric ton for most products. For samples and small orders, please contact our sales team for availability and pricing.",
+    "keywords": "moq minimum order quantity"
+  },
+  {
+    "q": "How and when will we get the sample?",
+    "a": "Sample lead time is usually 3-7 working days depending on stock and shipping method. Express sample delivery is available at buyer's expense.",
+    "keywords": "sample lead time how when get sample"
+  },
+  {
+    "q": "What is your packaging?",
+    "a": "We use kraft paper bags with PE liner in 25kg or 20kg sizes, and can arrange different packaging on request (e.g., 20ft containers with palletized bags).",
+    "keywords": "packaging packing how packaging"
+  },
+  {
+    "q": "What is your payment terms?",
+    "a": "Common payment terms are T/T 30% deposit and 70% before shipment. L/C at sight can be arranged for larger orders.",
+    "keywords": "payment terms payment terms t/t l/c payment"
+  },
+  {
+    "q": "What is your delivery time?",
+    "a": "Delivery time typically ranges from 20 to 45 days depending on destination, container availability, and order quantity.",
+    "keywords": "delivery time lead time transit"
+  },
+  {
+    "q": "What is your price?",
+    "a": "Price varies with specifications, quantity, and market conditions. Please request a quotation with your required grade and quantity.",
+    "keywords": "price cost quote"
+  },
+  {
+    "q": "What is your warranty?",
+    "a": "We guarantee product quality per agreed specifications. Any quality dispute should be raised within 30 days of receipt with supporting lab reports and pictures.",
+    "keywords": "warranty guarantee quality"
+  }
+]

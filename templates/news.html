@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+    <body>
+    {% include 'navbar.html' %}
+    <!-- Hero Banner -->
+    <div style="width:100%; height:320px; background:url('/static/gelatin_banner.jpg') center/cover no-repeat; margin-bottom:2rem; border-bottom:6px solid #232b6d;"></div>
+    <div class="content">
+        <h2>Global Presence</h2>
+        <ul>
+            <li>Manufacturing in Shanghai, China</li>
+            <li>Corporate sales office: ABCL General Trading FZCO, Dubai</li>
+            <li>Exporting to 50+ countries</li>
+            <li>Strong distribution and logistics support worldwide</li>
+        </ul>
+        <h2>Latest Updates</h2>
+        <p>Check back often for company news, product launches, certifications, and global expansion updates.</p>
+        <!-- Why Choose Section (now below nav/logo) -->
+        <section style="max-width:900px; margin:2rem auto; background:#fff; border-radius:18px; box-shadow:0 2px 16px rgba(26,35,126,0.07); padding:2rem 2rem;">
+            <h2 style="color:#fbc02d; font-size:1.5rem; margin-bottom:1.2rem; text-align:center;">Why Choose Shanghai Apex Biotechnology?</h2>
+            <ul style="font-size:1.08rem; line-height:2;">
+                <li>20+ years of experience in gelatin and collagen production</li>
+                <li>Advanced manufacturing in Shanghai, global sales office in Dubai</li>
+                <li>ISO 9001, ISO 22000, GMP, HACCP, Halal, Kosher, FDA registered</li>
+                <li>Annual capacity: 15,000+ tons, serving 50+ countries</li>
+                <li>Safe, stable, and certified products for food, pharma, and nutraceuticals</li>
+            </ul>
+        </section>
+        <!-- Certification Logos Section -->
+        <section style="max-width:900px; margin:2rem auto 3rem auto; text-align:center;">
+            <img src="https://www.jdgelatin.com/uploads/20220311/iso9001.png" alt="ISO 9001" style="height:48px; margin:0 1rem;">
+            <img src="https://www.jdgelatin.com/uploads/20220311/iso22000.png" alt="ISO 22000" style="height:48px; margin:0 1rem;">
+            <img src="https://www.jdgelatin.com/uploads/20220311/gmp.png" alt="GMP" style="height:48px; margin:0 1rem;">
+            <img src="https://www.jdgelatin.com/uploads/20220311/haccp.png" alt="HACCP" style="height:48px; margin:0 1rem;">
+            <img src="https://www.jdgelatin.com/uploads/20220311/halal.png" alt="Halal" style="height:48px; margin:0 1rem;">
+            <img src="https://www.jdgelatin.com/uploads/20220311/kosher.png" alt="Kosher" style="height:48px; margin:0 1rem;">
+            <img src="https://www.jdgelatin.com/uploads/20220311/fda.png" alt="FDA" style="height:48px; margin:0 1rem;">
+        </section>
+    </div>
+    <div class="footer">
+        Made with Flask | <a href="/">Home</a>
+    </div>
+</body>
+</html>

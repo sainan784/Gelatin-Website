@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
+  <rect width="400" height="240" rx="12" fill="#fff" stroke="#e6e6f7"/>
+  <g transform="translate(40,30)" fill="#1a237e">
+    <path d="M20 120 C60 80 140 60 220 100 C260 120 300 110 340 90 L340 140 L20 140 Z" fill="#1a237e" opacity="0.12"/>
+  </g>
+  <text x="200" y="210" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Powder Product</text>
+</svg>

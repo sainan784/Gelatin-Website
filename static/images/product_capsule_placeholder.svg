@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
+  <rect width="400" height="240" rx="12" fill="#fff" stroke="#e6e6f7"/>
+  <g transform="translate(40,40)" fill="#1a237e">
+    <ellipse cx="80" cy="40" rx="60" ry="28" fill="#fff" stroke="#1a237e"/>
+    <rect x="20" y="40" width="160" height="40" rx="20"/>
+  </g>
+  <text x="200" y="210" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Capsule Product</text>
+</svg>
