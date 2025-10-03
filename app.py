@@ -56,7 +56,56 @@ def product_others():
 
 @app.route('/application')
 def application_index():
-	return render_template('application_food.html')
+	return render_template('application.html')
+
+
+@app.route('/application/confectionery')
+def application_confectionery():
+	return render_template('application_confectionery.html')
+
+@app.route('/application/dairy')
+def application_dairy():
+	return render_template('application_dairy.html')
+
+@app.route('/application/desserts')
+def application_desserts():
+	return render_template('application_desserts.html')
+
+@app.route('/application/gummies')
+def application_gummies():
+	return render_template('application_gummies.html')
+
+@app.route('/application/meat')
+def application_meat():
+	return render_template('application_meat.html')
+
+@app.route('/application/alcoholic')
+def application_alcoholic():
+	return render_template('application_alcoholic.html')
+
+@app.route('/application/hard-capsules')
+def application_hard_capsules():
+	return render_template('application_hard_capsules.html')
+
+@app.route('/application/soft-gels')
+def application_soft_gels():
+	return render_template('application_soft_gels.html')
+
+@app.route('/application/microcapsules')
+def application_microcapsules():
+	return render_template('application_microcapsules.html')
+
+@app.route('/application/tablets')
+def application_tablets():
+	return render_template('application_tablets.html')
+
+@app.route('/application/specialty-pharma')
+def application_specialty_pharma():
+	return render_template('application_specialty_pharma.html')
+
+@app.route('/application/industrial')
+def application_industrial():
+	return render_template('application_industrial.html')
 
 @app.route('/application/food')
 def application_food():

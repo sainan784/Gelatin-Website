@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Applications</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .apps-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+        .app-card { position:relative; overflow:hidden; border-radius:8px; display:block; color:#fff; text-decoration:none; height:120px; }
+        .app-card img { width:100%; height:100%; object-fit:cover; filter:brightness(0.6); }
+        .app-card h3 { position:absolute; left:12px; bottom:12px; margin:0; font-size:1.1rem; text-shadow:0 2px 6px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <main class="content" style="max-width:1100px; margin:2rem auto;">
+        <h1 style="text-align:center; color:#1a237e;">Applications</h1>
+        <p style="text-align:center; color:#555; max-width:900px; margin:0.6rem auto 1.6rem auto;">Explore common application areas where our gelatins and collagens are used.</p>
+        <div class="apps-grid">
+            <a class="app-card" href="/application/confectionery"><img src="/static/images/app_confectionery.jpg" alt="Confectionery"><h3>Confectionery</h3></a>
+            <a class="app-card" href="/application/dairy"><img src="/static/images/app_dairy.jpg" alt="Dairy"><h3>Dairy</h3></a>
+            <a class="app-card" href="/application/desserts"><img src="/static/images/app_desserts.jpg" alt="Desserts"><h3>Desserts</h3></a>
+            <a class="app-card" href="/application/gummies"><img src="/static/images/app_gummies.jpg" alt="Gummies"><h3>Functional Gummies</h3></a>
+            <a class="app-card" href="/application/meat"><img src="/static/images/app_meat.jpg" alt="Meat"><h3>Meat</h3></a>
+            <a class="app-card" href="/application/alcoholic"><img src="/static/images/app_alcoholic.jpg" alt="Alcoholic"><h3>Alcoholic Beverages</h3></a>
+            <a class="app-card" href="/application/hard-capsules"><img src="/static/images/app_hard_capsules.jpg" alt="Hard Capsules"><h3>Hard Capsules</h3></a>
+            <a class="app-card" href="/application/soft-gels"><img src="/static/images/app_soft_gels.jpg" alt="Soft Gels"><h3>Soft Gels</h3></a>
+            <a class="app-card" href="/application/microcapsules"><img src="/static/images/app_microcapsules.jpg" alt="Microcapsules"><h3>Microcapsules</h3></a>
+            <a class="app-card" href="/application/tablets"><img src="/static/images/app_tablets.jpg" alt="Tablets"><h3>Tablets</h3></a>
+            <a class="app-card" href="/application/specialty-pharma"><img src="/static/images/app_specialty_pharma.jpg" alt="Specialty Pharma"><h3>Specialty Pharma</h3></a>
+            <a class="app-card" href="/application/industrial"><img src="/static/images/app_industrial.jpg" alt="Industrial Gelatin"><h3>Industrial Gelatin</h3></a>
+        </div>
+    </main>
+</body>
+</html>
