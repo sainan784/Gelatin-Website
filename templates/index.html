@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Website</title>
     <link rel="stylesheet" href="/static/style.css">
-    <style>
-        body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; }
-        .header { background: #fff; padding: 2rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .main-image { width: 200px; margin: 2rem auto; display: block; }
-        .cta-btn { background: #007bff; color: #fff; border: none; padding: 1rem 2rem; border-radius: 5px; cursor: pointer; font-size: 1rem; margin-top: 2rem; }
-        .footer { text-align: center; padding: 1rem; background: #eee; position: fixed; width: 100%; bottom: 0; }
-    </style>
 </head>
 <body>
     <!-- ...existing code... -->
@@ -32,51 +25,56 @@
     <!-- Optional fallback banner image (placeholder used when no photo provided) -->
     <img src="/static/images/banner_placeholder.svg" alt="" class="hero-fallback" aria-hidden="true">
     </header>
-    <div class="content">
-        <section style="margin-bottom:2.5rem;">
-            <h2 style="color:#fbc02d; font-size:2rem; margin-bottom:1.2rem;">Welcome to Shanghai Apex Biotechnology Co. Ltd.</h2>
-            <p style="font-size:1.15rem; margin-bottom:1.5rem;">We specialize in high-quality gelatin and collagen products, serving food, pharmaceutical, nutraceutical, and industrial sectors worldwide. With advanced manufacturing in Shanghai and a global sales office in Dubai, we deliver safe, stable, and certified gelatin solutions.</p>
-            <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-bottom:2rem;">
-                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px;">
-                    <strong>Founded:</strong> 2001<br>
-                    <strong>Products:</strong> Edible, Pharmaceutical, Hydrolyzed Collagen, Specialty Gelatin
+    <div class="page-container">
+        <div class="content">
+            <section class="intro">
+                <h2 class="accent">Welcome to Shanghai Apex Biotechnology Co. Ltd.</h2>
+                <p class="lead">We specialize in high-quality gelatin and collagen products, serving food, pharmaceutical, nutraceutical, and industrial sectors worldwide. With advanced manufacturing in Shanghai and a global sales office in Dubai, we deliver safe, stable, and certified gelatin solutions.</p>
+
+                <div class="card-row">
+                    <div class="info-card">
+                        <strong>Founded:</strong> 2001<br>
+                        <strong>Products:</strong> Edible, Pharmaceutical, Hydrolyzed Collagen, Specialty Gelatin
+                    </div>
+                    <div class="info-card">
+                        <strong>Certifications:</strong> ISO 9001, ISO 22000, GMP, HACCP, Halal, Kosher, FDA registered
+                    </div>
                 </div>
-                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px;">
-                    <strong>Certifications:</strong> ISO 9001, ISO 22000, GMP, HACCP, Halal, Kosher, FDA registered
+
+                <div class="card-row center">
+                    <div class="info-card small">
+                        <h3>Annual Capacity</h3>
+                        <div class="stat-value">15,000+ tons</div>
+                    </div>
+                    <div class="info-card small">
+                        <h3>Global Reach</h3>
+                        <div class="stat-value">50+ countries</div>
+                    </div>
+                    <div class="cta-stack">
+                        <a href="/product" class="cta-btn">View Products</a>
+                        <a href="mailto:info@shanghaiapexgelatin.com" class="cta-btn" style="background:#28a745;">Contact Us</a>
+                    </div>
                 </div>
-            </div>
-            <div style="display:flex; gap:2rem; flex-wrap:wrap; justify-content:center; margin-bottom:2.5rem;">
-                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px; text-align:center;">
-                    <h3 style="color:#1a237e; font-size:1.1rem; margin-bottom:0.5rem;">Annual Capacity</h3>
-                    <div style="font-size:1.3rem; font-weight:600; color:#fbc02d;">15,000+ tons</div>
+            </section>
+
+            <section class="contact-info">
+                <h2 class="accent">Contact Information</h2>
+                <div class="card-row">
+                    <div class="info-card">
+                        <strong>China Head Office:</strong><br>
+                        Shanghai Apex Biotechnology Co. Ltd., Industrial Zone, Shanghai, China<br>
+                        Phone: +86-21-XXXXXXXX<br>
+                        Email: <a href="mailto:info@shanghaiapexgelatin.com">info@shanghaiapexgelatin.com</a>
+                    </div>
+                    <div class="info-card">
+                        <strong>UAE Sales Office:</strong><br>
+                        ABCL General Trading FZCO, Business Center, Dubai, UAE<br>
+                        Phone: +971-4-XXXXXXXX<br>
+                        Email: <a href="mailto:dubai@shanghaiapexgelatin.com">dubai@shanghaiapexgelatin.com</a>
+                    </div>
                 </div>
-                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px; text-align:center;">
-                    <h3 style="color:#1a237e; font-size:1.1rem; margin-bottom:0.5rem;">Global Reach</h3>
-                    <div style="font-size:1.3rem; font-weight:600; color:#fbc02d;">50+ countries</div>
-                </div>
-                <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
-                    <a href="/product" class="cta-btn" style="margin-bottom:0.7rem;">View Products</a>
-                    <a href="mailto:info@shanghaiapexgelatin.com" class="cta-btn" style="background:#28a745;">Contact Us</a>
-                </div>
-            </div>
-        </section>
-        <section style="margin-bottom:2.5rem;">
-            <h2 style="color:#fbc02d; font-size:1.5rem; margin-bottom:1.2rem;">Contact Information</h2>
-            <div style="display:flex; gap:2rem; flex-wrap:wrap;">
-                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px;">
-                    <strong>China Head Office:</strong><br>
-                    Shanghai Apex Biotechnology Co. Ltd., Industrial Zone, Shanghai, China<br>
-                    Phone: +86-21-XXXXXXXX<br>
-                    Email: <a href="mailto:info@shanghaiapexgelatin.com">info@shanghaiapexgelatin.com</a>
-                </div>
-                <div style="background:#f4f6fb; border-radius:16px; box-shadow:0 2px 8px rgba(26,35,126,0.07); padding:1.2rem 2rem; min-width:220px;">
-                    <strong>UAE Sales Office:</strong><br>
-                    ABCL General Trading FZCO, Business Center, Dubai, UAE<br>
-                    Phone: +971-4-XXXXXXXX<br>
-                    Email: <a href="mailto:dubai@shanghaiapexgelatin.com">dubai@shanghaiapexgelatin.com</a>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
     <div style="text-align:center;">
         <button class="cta-btn" onclick="navigator.clipboard.writeText(window.location.href)">Copy Link</button>
